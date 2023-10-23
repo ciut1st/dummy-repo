@@ -1,11 +1,11 @@
 // import your function
-import myName from './myName';
+import _ from 'lodash';
 
 function component() {
   const element = document.createElement('div');
 
-  // use your function!
-  element.textContent = myName('William');
+  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+
   return element;
 }
 
